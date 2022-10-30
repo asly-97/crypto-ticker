@@ -78,7 +78,7 @@ class _PriceScreenState extends State<PriceScreen> {
       list.add(Padding(
         padding: EdgeInsets.fromLTRB(18.0, 18.0, 18.0, 0),
         child: Card(
-          color: Colors.lightBlueAccent,
+          color: Colors.orangeAccent,
           elevation: 5.0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10.0),
@@ -106,7 +106,7 @@ class _PriceScreenState extends State<PriceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('🤑 Coin Ticker'),
+        title: Text('Coin Tracker'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -117,7 +117,7 @@ class _PriceScreenState extends State<PriceScreen> {
             height: 150.0,
             alignment: Alignment.center,
             padding: EdgeInsets.only(bottom: 30.0),
-            color: Colors.lightBlue,
+            color: Colors.orangeAccent,
             child: Platform.isIOS ? iOSPicker() : androidDropdown(),
           ),
         ],
